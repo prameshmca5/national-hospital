@@ -1,0 +1,559 @@
+72025-05-01 14:24:47 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Starting NationalHospitalSingaporeApplication using Java 17.0.9 with PID 19659 (/Users/rohit/IdeaProjects/national-hospital-singapore/target/classes started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 14:24:47 [main] DEBUG c.n.n.NationalHospitalSingaporeApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 14:24:47 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 14:24:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2025-05-01 14:24:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 14:24:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-01 14:24:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 14:24:48 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 14:24:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 14:24:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 14:24:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 14:24:49 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 14:24:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 14:24:49 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 14:24:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 14:24:50 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer took 0.771949291s
+2025-05-01 14:24:51 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer2 took 0.636687791s
+2025-05-01 14:24:51 [main] INFO  o.j.w.WeldServletContainerInitializerRegistrationBean - org.jboss.weld.environment.servlet.archive.isolation has already been set to false
+2025-05-01 14:24:51 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+2025-05-01 14:24:51 [main] INFO  org.jboss.weld.Version - WELD-000900: 5.1.0 (Final)
+2025-05-01 14:24:51 [main] INFO  org.jboss.weld.Bootstrap - WELD-ENV-000041: Using org.joinfaces.weld.ClassGraphDiscoveryStrategy@5da16ed6 for bean discovery
+2025-05-01 14:24:51 [main] INFO  org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2025-05-01 14:24:51 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-05-01 14:24:51 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001002: Container detection skipped - custom container class loaded: org.joinfaces.weld.NoopContainer.
+2025-05-01 14:24:51 [main] INFO  j.e.r.webcontainer.faces.config - Initializing Mojarra 4.0.6 for context ''
+2025-05-01 14:24:51 [main] INFO  j.e.r.webcontainer.faces.application - JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2025-05-01 14:24:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2025-05-01 14:24:52 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Started NationalHospitalSingaporeApplication in 5.2 seconds (process running for 5.837)
+2025-05-01 14:24:58 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 14:25:27 [http-nio-8085-exec-7] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=Kavin Kumar, age=34, medicalHistory=Cancer, createdAt=null, updatedAt=null)
+2025-05-01 14:25:27 [http-nio-8085-exec-7] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 14:25:27 [http-nio-8085-exec-7] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 14:25:36 [http-nio-8085-exec-9] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=3, name=Kavin Kumar2, age=35, medicalHistory=Cancer2, createdAt=null, updatedAt=null)
+2025-05-01 14:25:36 [http-nio-8085-exec-9] DEBUG c.n.n.controller.PatientController - Updating existing patient ID: 3
+2025-05-01 14:25:36 [http-nio-8085-exec-9] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 14:25:39 [http-nio-8085-exec-10] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 3
+2025-05-01 14:25:39 [http-nio-8085-exec-10] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 15:13:02 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m13s51ms).
+2025-05-01 15:14:46 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m43s833ms).
+2025-05-01 15:15:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 15:15:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 15:17:04 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Starting NationalHospitalSingaporeApplication using Java 17.0.9 with PID 19825 (/Users/rohit/IdeaProjects/national-hospital-singapore/target/classes started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 15:17:04 [main] DEBUG c.n.n.NationalHospitalSingaporeApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 15:17:04 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 15:17:04 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2025-05-01 15:17:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 15:17:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-01 15:17:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 15:17:05 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 15:17:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 15:17:05 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 15:17:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 15:17:05 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 15:17:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 15:17:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 15:17:05 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 15:17:06 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer took 0.756494501s
+2025-05-01 15:17:07 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer2 took 0.650092542s
+2025-05-01 15:17:07 [main] INFO  o.j.w.WeldServletContainerInitializerRegistrationBean - org.jboss.weld.environment.servlet.archive.isolation has already been set to false
+2025-05-01 15:17:07 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+2025-05-01 15:17:07 [main] INFO  org.jboss.weld.Version - WELD-000900: 5.1.0 (Final)
+2025-05-01 15:17:07 [main] INFO  org.jboss.weld.Bootstrap - WELD-ENV-000041: Using org.joinfaces.weld.ClassGraphDiscoveryStrategy@569d6e0d for bean discovery
+2025-05-01 15:17:07 [main] INFO  org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2025-05-01 15:17:07 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-05-01 15:17:07 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001002: Container detection skipped - custom container class loaded: org.joinfaces.weld.NoopContainer.
+2025-05-01 15:17:07 [main] INFO  j.e.r.webcontainer.faces.config - Initializing Mojarra 4.0.6 for context ''
+2025-05-01 15:17:07 [main] INFO  j.e.r.webcontainer.faces.application - JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2025-05-01 15:17:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2025-05-01 15:17:09 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Started NationalHospitalSingaporeApplication in 5.137 seconds (process running for 5.868)
+2025-05-01 15:17:13 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 15:21:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 15:21:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 15:21:12 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Starting NationalHospitalSingaporeApplication using Java 17.0.9 with PID 19877 (/Users/rohit/IdeaProjects/national-hospital-singapore/target/classes started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 15:21:12 [main] DEBUG c.n.n.NationalHospitalSingaporeApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 15:21:12 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 15:21:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2025-05-01 15:21:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 15:21:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-01 15:21:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 15:21:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 15:21:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 15:21:13 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 15:21:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 15:21:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 15:21:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 15:21:13 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 15:21:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 15:21:15 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer took 0.794842293s
+2025-05-01 15:21:15 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer2 took 0.661355708s
+2025-05-01 15:21:15 [main] INFO  o.j.w.WeldServletContainerInitializerRegistrationBean - org.jboss.weld.environment.servlet.archive.isolation has already been set to false
+2025-05-01 15:21:15 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+2025-05-01 15:21:16 [main] INFO  org.jboss.weld.Version - WELD-000900: 5.1.0 (Final)
+2025-05-01 15:21:16 [main] INFO  org.jboss.weld.Bootstrap - WELD-ENV-000041: Using org.joinfaces.weld.ClassGraphDiscoveryStrategy@569d6e0d for bean discovery
+2025-05-01 15:21:16 [main] INFO  org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2025-05-01 15:21:16 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-05-01 15:21:16 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001002: Container detection skipped - custom container class loaded: org.joinfaces.weld.NoopContainer.
+2025-05-01 15:21:16 [main] INFO  j.e.r.webcontainer.faces.config - Initializing Mojarra 4.0.6 for context ''
+2025-05-01 15:21:16 [main] INFO  j.e.r.webcontainer.faces.application - JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2025-05-01 15:21:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2025-05-01 15:21:17 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Started NationalHospitalSingaporeApplication in 4.999 seconds (process running for 5.681)
+2025-05-01 15:21:28 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 15:24:20 [http-nio-8085-exec-6] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=Dhanapal, age=36, medicalHistory=Medical Check, createdAt=null, updatedAt=null)
+2025-05-01 15:24:20 [http-nio-8085-exec-6] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 15:24:20 [http-nio-8085-exec-6] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 15:24:51 [http-nio-8085-exec-3] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 3
+2025-05-01 15:24:51 [http-nio-8085-exec-3] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 15:25:18 [http-nio-8085-exec-9] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=2, name=Rohit12, age=28, medicalHistory=Fever, createdAt=2025-05-01T15:21:17.546110, updatedAt=2025-05-01T15:21:17.546120)
+2025-05-01 15:25:18 [http-nio-8085-exec-9] DEBUG c.n.n.controller.PatientController - Updating existing patient ID: 2
+2025-05-01 15:25:18 [http-nio-8085-exec-9] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 16:08:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 16:08:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 16:08:16 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Starting NationalHospitalSingaporeApplication using Java 17.0.9 with PID 24404 (/Users/rohit/IdeaProjects/national-hospital-singapore/target/classes started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 16:08:16 [main] DEBUG c.n.n.NationalHospitalSingaporeApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 16:08:16 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 16:08:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2025-05-01 16:08:17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 16:08:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-01 16:08:17 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 16:08:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 16:08:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 16:08:17 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 16:08:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 16:08:17 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 16:08:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 16:08:17 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 16:08:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 16:08:19 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer took 0.722998792s
+2025-05-01 16:08:19 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer2 took 0.606775833s
+2025-05-01 16:08:19 [main] INFO  o.j.w.WeldServletContainerInitializerRegistrationBean - org.jboss.weld.environment.servlet.archive.isolation has already been set to false
+2025-05-01 16:08:19 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+2025-05-01 16:08:19 [main] INFO  org.jboss.weld.Version - WELD-000900: 5.1.0 (Final)
+2025-05-01 16:08:19 [main] INFO  org.jboss.weld.Bootstrap - WELD-ENV-000041: Using org.joinfaces.weld.ClassGraphDiscoveryStrategy@4fbed6fc for bean discovery
+2025-05-01 16:08:19 [main] INFO  org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2025-05-01 16:08:19 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-05-01 16:08:19 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001002: Container detection skipped - custom container class loaded: org.joinfaces.weld.NoopContainer.
+2025-05-01 16:08:19 [main] INFO  j.e.r.webcontainer.faces.config - Initializing Mojarra 4.0.6 for context ''
+2025-05-01 16:08:20 [main] INFO  j.e.r.webcontainer.faces.application - JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2025-05-01 16:08:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2025-05-01 16:08:21 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Started NationalHospitalSingaporeApplication in 5.017 seconds (process running for 5.338)
+2025-05-01 16:08:34 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 16:08:57 [http-nio-8085-exec-6] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=John, age=34, medicalHistory=Fever, createdAt=null, updatedAt=null)
+2025-05-01 16:08:57 [http-nio-8085-exec-6] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 16:08:57 [http-nio-8085-exec-6] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 16:09:04 [http-nio-8085-exec-8] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=3, name=John3, age=34, medicalHistory=Fever, createdAt=null, updatedAt=null)
+2025-05-01 16:09:04 [http-nio-8085-exec-8] DEBUG c.n.n.controller.PatientController - Updating existing patient ID: 3
+2025-05-01 16:09:04 [http-nio-8085-exec-8] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 16:09:27 [http-nio-8085-exec-8] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 3
+2025-05-01 16:09:27 [http-nio-8085-exec-8] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 16:31:13 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 16:31:13 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 16:54:27 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 16:54:27 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 16:54:27 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 16:55:25 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 16:55:25 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 16:55:25 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 16:56:47 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 16:56:47 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 16:56:47 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 16:57:06 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 16:57:06 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 16:57:06 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 16:58:49 [main] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 1
+2025-05-01 16:58:49 [main] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 16:58:58 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 16:58:58 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 16:58:58 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 16:58:58 [main] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 1
+2025-05-01 16:58:58 [main] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 16:58:58 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 16:58:58 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 16:58:58 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 16:59:54 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 16:59:54 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 16:59:54 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 16:59:54 [main] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 1
+2025-05-01 16:59:54 [main] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 16:59:54 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=Ramesh Pongiannan, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 16:59:54 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 16:59:54 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 19:35:30 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 19:35:30 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 19:35:30 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 19:35:30 [main] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 1
+2025-05-01 19:35:30 [main] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 19:35:30 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=Ramesh Pongiannan, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 19:35:30 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 19:35:30 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 19:38:51 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Starting NationalHospitalSingaporeApplicationTests using Java 17.0.9 with PID 25172 (started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 19:38:51 [main] DEBUG c.n.n.NationalHospitalSingaporeApplicationTests - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 19:38:51 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 19:38:51 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 19:38:51 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 19:38:51 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 19:38:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 19:38:51 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 19:38:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 19:38:51 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 19:38:52 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 19:38:54 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Started NationalHospitalSingaporeApplicationTests in 3.958 seconds (process running for 5.061)
+2025-05-01 19:38:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 19:38:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 19:39:01 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Starting NationalHospitalSingaporeApplicationTests using Java 17.0.9 with PID 25177 (started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 19:39:01 [main] DEBUG c.n.n.NationalHospitalSingaporeApplicationTests - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 19:39:01 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 19:39:01 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 19:39:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 19:39:01 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 19:39:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 19:39:02 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 19:39:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 19:39:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 19:39:02 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 19:39:03 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Started NationalHospitalSingaporeApplicationTests in 2.399 seconds (process running for 3.497)
+2025-05-01 19:39:03 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 19:39:03 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 19:39:03 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 19:39:03 [main] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 1
+2025-05-01 19:39:03 [main] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 19:39:03 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=Ramesh Pongiannan, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 19:39:03 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 19:39:03 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 19:39:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 19:39:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 19:53:59 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 19:53:59 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 19:53:59 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 19:53:59 [main] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 1
+2025-05-01 19:53:59 [main] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 19:53:59 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=Ramesh Pongiannan, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 19:53:59 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 19:53:59 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 19:53:59 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Starting NationalHospitalSingaporeApplicationTests using Java 17.0.9 with PID 29343 (started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 19:53:59 [main] DEBUG c.n.n.NationalHospitalSingaporeApplicationTests - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 19:53:59 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 19:54:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 19:54:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 19:54:00 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 19:54:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 19:54:00 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 19:54:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 19:54:00 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 19:54:01 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 19:54:02 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Started NationalHospitalSingaporeApplicationTests in 2.868 seconds (process running for 4.228)
+2025-05-01 19:54:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 19:54:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 20:07:26 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 20:07:26 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 20:07:26 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 20:07:26 [main] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 1
+2025-05-01 20:07:26 [main] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 20:07:26 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=Ramesh Pongiannan, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 20:07:26 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 20:07:26 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 20:07:27 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Starting NationalHospitalSingaporeApplicationTests using Java 17.0.9 with PID 29436 (started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 20:07:27 [main] DEBUG c.n.n.NationalHospitalSingaporeApplicationTests - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 20:07:27 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:07:28 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:07:28 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 20:07:28 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 20:07:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 20:07:28 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 20:07:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 20:07:28 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:07:28 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:07:30 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Started NationalHospitalSingaporeApplicationTests in 3.424 seconds (process running for 4.799)
+2025-05-01 20:07:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 20:07:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 21:11:43 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Starting NationalHospitalSingaporeApplication using Java 17.0.9 with PID 76484 (/Users/rohit/IdeaProjects/national-hospital-singapore/target/classes started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 21:11:43 [main] DEBUG c.n.n.NationalHospitalSingaporeApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 21:11:43 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 21:11:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2025-05-01 21:11:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 21:11:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-01 21:11:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 21:11:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 21:11:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 21:11:45 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 21:11:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 21:11:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 21:11:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 21:11:45 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 21:11:45 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 21:11:46 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer took 0.895648957s
+2025-05-01 21:11:47 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer2 took 0.708379875s
+2025-05-01 21:11:47 [main] INFO  o.j.w.WeldServletContainerInitializerRegistrationBean - org.jboss.weld.environment.servlet.archive.isolation has already been set to false
+2025-05-01 21:11:47 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+2025-05-01 21:11:47 [main] INFO  org.jboss.weld.Version - WELD-000900: 5.1.0 (Final)
+2025-05-01 21:11:47 [main] INFO  org.jboss.weld.Bootstrap - WELD-ENV-000041: Using org.joinfaces.weld.ClassGraphDiscoveryStrategy@18f493d7 for bean discovery
+2025-05-01 21:11:47 [main] INFO  org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2025-05-01 21:11:47 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-05-01 21:11:47 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001002: Container detection skipped - custom container class loaded: org.joinfaces.weld.NoopContainer.
+2025-05-01 21:11:48 [main] INFO  j.e.r.webcontainer.faces.config - Initializing Mojarra 4.0.6 for context ''
+2025-05-01 21:11:48 [main] INFO  j.e.r.webcontainer.faces.application - JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2025-05-01 21:11:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2025-05-01 21:11:49 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Started NationalHospitalSingaporeApplication in 6.191 seconds (process running for 6.578)
+2025-05-01 21:11:50 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 21:12:13 [http-nio-8085-exec-9] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=Ramesh, age=22, medicalHistory=HeadAche, createdAt=null, updatedAt=null)
+2025-05-01 21:12:13 [http-nio-8085-exec-9] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 21:12:13 [http-nio-8085-exec-9] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 21:12:20 [http-nio-8085-exec-1] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=3, name=Ramesh1, age=221, medicalHistory=HeadAche, createdAt=null, updatedAt=null)
+2025-05-01 21:12:20 [http-nio-8085-exec-1] DEBUG c.n.n.controller.PatientController - Updating existing patient ID: 3
+2025-05-01 21:12:21 [http-nio-8085-exec-1] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 21:17:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 21:17:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 21:29:07 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Starting NationalHospitalSingaporeApplicationTests using Java 17.0.9 with PID 81075 (started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 21:29:07 [main] DEBUG c.n.n.NationalHospitalSingaporeApplicationTests - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 21:29:07 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 21:29:08 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 21:29:08 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 21:29:08 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 21:29:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 21:29:09 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 21:29:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 21:29:09 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 21:29:09 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 21:29:11 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Started NationalHospitalSingaporeApplicationTests in 3.368 seconds (process running for 4.544)
+2025-05-01 21:29:11 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 21:29:11 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 21:29:11 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 21:29:11 [main] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 1
+2025-05-01 21:29:11 [main] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 21:29:11 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=Ramesh Pongiannan, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 21:29:11 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 21:29:11 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 21:29:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 21:29:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 21:29:44 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Starting NationalHospitalSingaporeApplicationTests using Java 17.0.9 with PID 81080 (started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 21:29:44 [main] DEBUG c.n.n.NationalHospitalSingaporeApplicationTests - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 21:29:44 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 21:29:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 21:29:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 21:29:45 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 21:29:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 21:29:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 21:29:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 21:29:45 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 21:29:46 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 21:29:47 [main] INFO  c.n.n.NationalHospitalSingaporeApplicationTests - Started NationalHospitalSingaporeApplicationTests in 3.239 seconds (process running for 4.318)
+2025-05-01 21:29:47 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=New Patient, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 21:29:47 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 21:29:47 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 21:29:47 [main] INFO  c.n.n.controller.PatientController - Deleting patient with ID: 1
+2025-05-01 21:29:47 [main] INFO  c.n.n.controller.PatientController - Patient deleted successfully
+2025-05-01 21:29:47 [main] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=Ramesh Pongiannan, age=null, medicalHistory=null, createdAt=null, updatedAt=null)
+2025-05-01 21:29:47 [main] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 21:29:47 [main] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 21:29:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 21:29:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 21:29:56 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Starting NationalHospitalSingaporeApplication using Java 17.0.9 with PID 81086 (/Users/rohit/IdeaProjects/national-hospital-singapore/target/classes started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 21:29:56 [main] DEBUG c.n.n.NationalHospitalSingaporeApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 21:29:56 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 21:29:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:29:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 21:29:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-01 21:29:57 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 21:29:57 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 21:29:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 21:29:57 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 21:29:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 21:29:57 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 21:29:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 21:29:57 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 21:29:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 21:29:59 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer took 0.757773083s
+2025-05-01 21:29:59 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer2 took 0.617036459s
+2025-05-01 21:29:59 [main] INFO  o.j.w.WeldServletContainerInitializerRegistrationBean - org.jboss.weld.environment.servlet.archive.isolation has already been set to false
+2025-05-01 21:29:59 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+2025-05-01 21:29:59 [main] INFO  org.jboss.weld.Version - WELD-000900: 5.1.0 (Final)
+2025-05-01 21:29:59 [main] INFO  org.jboss.weld.Bootstrap - WELD-ENV-000041: Using org.joinfaces.weld.ClassGraphDiscoveryStrategy@77fa2dcc for bean discovery
+2025-05-01 21:29:59 [main] INFO  org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2025-05-01 21:29:59 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-05-01 21:29:59 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001002: Container detection skipped - custom container class loaded: org.joinfaces.weld.NoopContainer.
+2025-05-01 21:30:00 [main] INFO  j.e.r.webcontainer.faces.config - Initializing Mojarra 4.0.6 for context ''
+2025-05-01 21:30:00 [main] INFO  j.e.r.webcontainer.faces.application - JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2025-05-01 21:30:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:30:01 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Started NationalHospitalSingaporeApplication in 5.565 seconds (process running for 5.9)
+2025-05-01 21:30:02 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 21:30:30 [http-nio-8080-exec-7] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=null, name=Ramesh, age=33, medicalHistory=HeadAche, createdAt=null, updatedAt=null)
+2025-05-01 21:30:30 [http-nio-8080-exec-7] DEBUG c.n.n.controller.PatientController - Creating new patient
+2025-05-01 21:30:30 [http-nio-8080-exec-7] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 21:30:33 [http-nio-8080-exec-9] INFO  c.n.n.controller.PatientController - Attempting to save patient: Patient(id=3, name=Ramesh, age=33, medicalHistory=HeadAche, createdAt=null, updatedAt=null)
+2025-05-01 21:30:33 [http-nio-8080-exec-9] DEBUG c.n.n.controller.PatientController - Updating existing patient ID: 3
+2025-05-01 21:30:33 [http-nio-8080-exec-9] INFO  c.n.n.controller.PatientController - Patient saved successfully
+2025-05-01 21:31:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 21:31:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 21:33:13 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Starting NationalHospitalSingaporeApplication using Java 17.0.9 with PID 81180 (/Users/rohit/IdeaProjects/national-hospital-singapore/target/classes started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 21:33:13 [main] DEBUG c.n.n.NationalHospitalSingaporeApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 21:33:13 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 21:33:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:33:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 21:33:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-01 21:33:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 21:33:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 21:33:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 21:33:14 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 21:33:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 21:33:14 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 21:33:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 21:33:14 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 21:33:15 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 21:33:16 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer took 0.750197958s
+2025-05-01 21:33:17 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer2 took 0.667524875s
+2025-05-01 21:33:17 [main] INFO  o.j.w.WeldServletContainerInitializerRegistrationBean - org.jboss.weld.environment.servlet.archive.isolation has already been set to false
+2025-05-01 21:33:17 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+2025-05-01 21:33:17 [main] INFO  org.jboss.weld.Version - WELD-000900: 5.1.0 (Final)
+2025-05-01 21:33:17 [main] INFO  org.jboss.weld.Bootstrap - WELD-ENV-000041: Using org.joinfaces.weld.ClassGraphDiscoveryStrategy@5a63de07 for bean discovery
+2025-05-01 21:33:17 [main] INFO  org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2025-05-01 21:33:17 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-05-01 21:33:17 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001002: Container detection skipped - custom container class loaded: org.joinfaces.weld.NoopContainer.
+2025-05-01 21:33:17 [main] INFO  j.e.r.webcontainer.faces.config - Initializing Mojarra 4.0.6 for context ''
+2025-05-01 21:33:17 [main] INFO  j.e.r.webcontainer.faces.application - JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2025-05-01 21:33:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:33:19 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-05-01 21:33:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 21:33:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-01 21:33:19 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-05-01 21:33:43 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Starting NationalHospitalSingaporeApplication using Java 17.0.9 with PID 81192 (/Users/rohit/IdeaProjects/national-hospital-singapore/target/classes started by rohit in /Users/rohit/IdeaProjects/national-hospital-singapore)
+2025-05-01 21:33:43 [main] DEBUG c.n.n.NationalHospitalSingaporeApplication - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-01 21:33:43 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 21:33:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:33:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 21:33:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-01 21:33:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 21:33:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 21:33:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-01 21:33:44 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-01 21:33:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-01 21:33:44 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:national_hospital user=SA
+2025-05-01 21:33:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-01 21:33:44 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 21:33:45 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 21:33:46 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer took 0.767181958s
+2025-05-01 21:33:47 [main] INFO  o.j.s.ServletContainerInitializerRegistrationBean - Resolving classes for com.sun.faces.config.FacesInitializer2 took 0.642320626s
+2025-05-01 21:33:47 [main] INFO  o.j.w.WeldServletContainerInitializerRegistrationBean - org.jboss.weld.environment.servlet.archive.isolation has already been set to false
+2025-05-01 21:33:47 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+2025-05-01 21:33:47 [main] INFO  org.jboss.weld.Version - WELD-000900: 5.1.0 (Final)
+2025-05-01 21:33:47 [main] INFO  org.jboss.weld.Bootstrap - WELD-ENV-000041: Using org.joinfaces.weld.ClassGraphDiscoveryStrategy@221ef0f0 for bean discovery
+2025-05-01 21:33:47 [main] INFO  org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2025-05-01 21:33:47 [main] INFO  org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-05-01 21:33:47 [main] INFO  o.j.w.environment.servletWeldServlet - WELD-ENV-001002: Container detection skipped - custom container class loaded: org.joinfaces.weld.NoopContainer.
+2025-05-01 21:33:47 [main] INFO  j.e.r.webcontainer.faces.config - Initializing Mojarra 4.0.6 for context ''
+2025-05-01 21:33:47 [main] INFO  j.e.r.webcontainer.faces.application - JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2025-05-01 21:33:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:33:48 [main] INFO  c.n.n.NationalHospitalSingaporeApplication - Started NationalHospitalSingaporeApplication in 5.646 seconds (process running for 5.984)
+2025-05-01 21:33:49 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 21:42:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-01 21:42:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
