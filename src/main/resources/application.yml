@@ -29,11 +29,11 @@ spring:
       client:
         registration:
           auth0:
-            client-id: B8pMqzyoEbYkEwn76A3mZV5A5q1BHZ80
-            client-secret: yKTU38lQ25Y_GK4cIaQxulsS9cyNrgd-F_DOm57as_GS1gTfoFfD5FqWfe8YaS-L
+           # client-id: B8pMqzyoEbYkEwn76A3mZV5A5q1BHZ80 -remove
+           # client-secret: yKTU38lQ25Y_GK4cIaQxulsS9cyNrgd-F_DOm57as_GS1gTfoFfD5FqWfe8YaS-L -remove
             scope:
               - openid
             redirect-uri: http://localhost:8080/login/oauth2/code/auth0
         provider:
           auth0:
-            issuer-uri: https://rameshkp2.us.auth0.com/
+            #issuer-uri: https://rameshkp2.us.auth0.com/ -remove
