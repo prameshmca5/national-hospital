@@ -6,14 +6,13 @@ import com.national.nationalhospitalsg.service.PatientServices;
 import jakarta.annotation.PostConstruct;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
-import jakarta.inject.Inject;
-import jakarta.inject.Named;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.Data;
 import lombok.Getter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
@@ -31,10 +30,10 @@ public class PatientController implements Serializable {
     private static final Logger logger = LoggerFactory.getLogger(PatientController.class);
     private static final Logger auditLogger = LoggerFactory.getLogger("AUDIT_LOGGER");
 
-    @Inject
+    @Autowired
     private PatientServices patientServices;
 
-    @Inject
+    @Autowired
     private HttpServletRequest request;
 
     private List<Patient> parentsList;
