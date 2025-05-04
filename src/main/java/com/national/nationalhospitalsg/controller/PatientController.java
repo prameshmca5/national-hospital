@@ -14,6 +14,7 @@ import lombok.Getter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
+import org.springframework.stereotype.Component;
 
 
 import java.io.IOException;
@@ -21,7 +22,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-@Named("patientBean")
+//@Named("patientBean")
+@Component(value = "patientBean")
 @ViewScoped
 @Data
 public class PatientController implements Serializable {
