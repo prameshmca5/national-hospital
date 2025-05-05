@@ -72,7 +72,6 @@ pipeline {
             }
             steps {
                 echo 'Deploying to Development environment'
-                // Add deployment steps here
             }
         }
         
@@ -82,17 +81,15 @@ pipeline {
             }
             steps {
                 echo 'Deploying to Staging environment'
-                // Add deployment steps here
             }
         }
         
         stage('Deploy to Production') {
             when {
-                branch 'main'
+                branch 'master'
             }
             steps {
                 echo 'Deploying to Production environment'
-                // Add deployment steps here
             }
         }
     }
@@ -106,7 +103,6 @@ pipeline {
         }
         failure {
             echo 'Pipeline failed!'
-            // Add notification steps here (email, Slack, etc.)
         }
     }
 }
