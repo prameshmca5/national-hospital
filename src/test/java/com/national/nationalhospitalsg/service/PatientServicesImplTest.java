@@ -7,9 +7,8 @@ import static org.mockito.Mockito.*;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
-import com.national.nationalhospitalsg.model.Patient;
+import com.national.nationalhospitalsg.model.entity.Patient;
 import com.national.nationalhospitalsg.repos.PatientsRepos;
 import com.national.nationalhospitalsg.service.impl.PatientServicesImpl;
 import org.junit.jupiter.api.BeforeEach;

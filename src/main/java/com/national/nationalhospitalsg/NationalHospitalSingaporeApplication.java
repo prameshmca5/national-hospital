@@ -1,6 +1,6 @@
 package com.national.nationalhospitalsg;
 
-import com.national.nationalhospitalsg.model.Patient;
+import com.national.nationalhospitalsg.model.entity.Patient;
 import com.national.nationalhospitalsg.repos.PatientsRepos;
 import com.national.nationalhospitalsg.service.PatientServices;
 import jakarta.faces.webapp.FacesServlet;

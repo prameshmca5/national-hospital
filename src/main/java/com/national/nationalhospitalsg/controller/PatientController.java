@@ -1,7 +1,7 @@
 package com.national.nationalhospitalsg.controller;
 
 
-import com.national.nationalhospitalsg.model.Patient;
+import com.national.nationalhospitalsg.model.entity.Patient;
 import com.national.nationalhospitalsg.service.PatientServices;
 import jakarta.annotation.PostConstruct;
 import jakarta.faces.context.FacesContext;
@@ -18,6 +18,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,15 +83,17 @@ public class PatientController implements Serializable {
             if (selectedPatient.getId() == null) {
                 auditLogger.info("CREATE_PATIENT | Attempt | {}", selectedPatient);
                 logger.debug("Creating new patient");
+                selectedPatient.setCreatedAt(LocalDateTime.now());
+                selectedPatient.setUpdatedAt(LocalDateTime.now());
                 patientServices.createOrUpdatePatient(selectedPatient);
                 auditLogger.info("CREATE_PATIENT | Success | ID: {}", selectedPatient.getId());
             } else {
                 logger.debug("Updating existing patient ID: {}", selectedPatient.getId());
                 auditLogger.info("UPDATE_PATIENT | Attempt | ID: {}", selectedPatient.getId());
+                selectedPatient.setUpdatedAt(LocalDateTime.now());
                 patientServices.createOrUpdatePatient(selectedPatient);
                 auditLogger.info("UPDATE_PATIENT | Success | Changes: {}", selectedPatient);
             }
-
             loadParents();
             selectedPatient = new Patient();
             logger.info("Patient saved successfully");

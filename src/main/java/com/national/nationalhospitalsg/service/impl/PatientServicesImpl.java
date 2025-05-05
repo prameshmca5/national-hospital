@@ -1,6 +1,6 @@
 package com.national.nationalhospitalsg.service.impl;
 
-import com.national.nationalhospitalsg.model.Patient;
+import com.national.nationalhospitalsg.model.entity.Patient;
 import com.national.nationalhospitalsg.repos.PatientsRepos;
 import com.national.nationalhospitalsg.service.PatientServices;
 import org.springframework.beans.factory.annotation.Autowired;

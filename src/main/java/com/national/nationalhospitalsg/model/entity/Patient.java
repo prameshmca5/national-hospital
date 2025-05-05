@@ -1,4 +1,4 @@
-package com.national.nationalhospitalsg.model;
+package com.national.nationalhospitalsg.model.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

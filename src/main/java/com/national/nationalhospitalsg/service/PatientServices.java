@@ -1,6 +1,6 @@
 package com.national.nationalhospitalsg.service;
 
-import com.national.nationalhospitalsg.model.Patient;
+import com.national.nationalhospitalsg.model.entity.Patient;
 
 import java.util.List;
 
